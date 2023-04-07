@@ -1,0 +1,44 @@
+{
+  "name": "learnkit/expose-about",
+  "description": "Expose about data to authenticated requests for diagnose usage",
+  "license": "GPL-3.0-or-later",
+  "type": "library",
+  "authors": [
+    {
+      "name": "Sebastiaan Kloos",
+      "email": "sebastiaan@learnkit.dev"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "LearnKit\\ExposeAbout\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "LearnKit\\ExposeAbout\\Tests\\": "tests/"
+    }
+  },
+  "require": {
+    "php": "^8.1",
+    "illuminate/support": "^9.0|^10.0"
+  },
+  "require-dev": {
+    "pestphp/pest": "^1.21",
+    "pestphp/pest-plugin-laravel": "^1.2",
+    "orchestra/testbench": "^7.0",
+    "spatie/laravel-ray": "^1.0",
+    "nunomaduro/phpinsights": "^2.7",
+    "laravel/pint": "^1.2"
+  },
+  "scripts": {
+    "insights": "./vendor/bin/phpinsights",
+    "pint": "./vendor/bin/pint"
+  },
+  "config": {
+    "allow-plugins": {
+      "pestphp/pest-plugin": true,
+      "dealerdirect/phpcodesniffer-composer-installer": true
+    }
+  }
+}
